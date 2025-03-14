@@ -19,5 +19,5 @@ app.get("/", (req, res)=>{
     res.redirect(`/${uuidv4()}`);
 })
 app.get(`/:room`, (req, res)=>{
-    res.render('app', {roomId: req.params.room});
+    res.sendFile('C:/Users/SRUTHI/OneDrive/Desktop/server-3/app.html', {roomId: req.params.room});
 })
